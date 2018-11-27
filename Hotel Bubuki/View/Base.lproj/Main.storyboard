@@ -287,7 +287,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vrh-7n-zH3">
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vrh-7n-zH3">
                                                     <rect key="frame" x="253" y="6" width="51" height="31"/>
                                                     <connections>
                                                         <action selector="wifiSwitch:" destination="DBp-WS-f2W" eventType="valueChanged" id="THV-1S-7SE"/>
@@ -302,7 +302,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2c-Vt-vt2">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2c-Vt-vt2">
                                                     <rect key="frame" x="202" y="3" width="42.5" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="42.5" id="MWR-27-G3D"/>
@@ -380,6 +380,8 @@
                         <outlet property="emailTextField" destination="1Ia-LA-XNR" id="foH-pu-Twp"/>
                         <outlet property="firstNameTextField" destination="Esm-hc-OFD" id="Pbn-cz-s9d"/>
                         <outlet property="lastNameTextField" destination="dqs-Qy-IqF" id="LTX-2Y-XpU"/>
+                        <outlet property="wifiCost" destination="l2c-Vt-vt2" id="Wfc-S2-ee2"/>
+                        <outlet property="wifiValue" destination="vrh-7n-zH3" id="GW6-AB-zkz"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8yI-bl-Nwt" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -20,6 +20,9 @@ class RegistrationFormTableViewController: UITableViewController {
     @IBOutlet weak var adultStep: UIStepper!
     @IBOutlet weak var childStep: UIStepper!
     
+    @IBOutlet weak var wifiValue: UISwitch!
+    @IBOutlet weak var wifiCost: UILabel!
+    
     @IBOutlet weak var checkInDateLabel: UILabel!
     @IBOutlet weak var checkInDatePicker: UIDatePicker!
     @IBOutlet weak var checkOutDateLabel: UILabel!
@@ -67,9 +70,9 @@ class RegistrationFormTableViewController: UITableViewController {
         let email = emailTextField.text ?? ""
         let checkInDate = checkInDatePicker.date
         let checkOutDate = checkOutDatePicker.date
-        let adultCount = adultCountText.text ?? ""
-        let childCount = childCountText.text ?? ""
-        
+        let adultCount = adultCountText.text
+        let childCount = childCountText.text
+        let wifi = wifiCost.text
     }
     
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
@@ -85,7 +88,7 @@ class RegistrationFormTableViewController: UITableViewController {
     }
     
     @IBAction func wifiSwitch(_ sender: UISwitch) {
-        
+        wifiCost.text = wifiValue.isOn ? "10$" : "0"
     }
     
     // MARK: - UITableViewDelegate
