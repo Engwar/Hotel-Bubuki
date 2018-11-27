@@ -14,7 +14,11 @@ class RegistrationFormTableViewController: UITableViewController {
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
+    @IBOutlet weak var adultCountText: UILabel!
+    @IBOutlet weak var childCountText: UILabel!
     
+    @IBOutlet weak var adultStep: UIStepper!
+    @IBOutlet weak var childStep: UIStepper!
     
     @IBOutlet weak var checkInDateLabel: UILabel!
     @IBOutlet weak var checkInDatePicker: UIDatePicker!
@@ -63,12 +67,25 @@ class RegistrationFormTableViewController: UITableViewController {
         let email = emailTextField.text ?? ""
         let checkInDate = checkInDatePicker.date
         let checkOutDate = checkOutDatePicker.date
-    
+        let adultCount = adultCountText.text ?? ""
+        let childCount = childCountText.text ?? ""
         
     }
     
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
         updateDateViews()
+    }
+    
+    @IBAction func adultStepper(_ sender: UIStepper) {
+        adultCountText.text = String(Int(adultStep.value))
+    }
+    
+    @IBAction func childStepper(_ sender: UIStepper) {
+        childCountText.text = String(Int(childStep.value))
+    }
+    
+    @IBAction func wifiSwitch(_ sender: UISwitch) {
+        
     }
     
     // MARK: - UITableViewDelegate
