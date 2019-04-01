@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9437F74A21B69FF3000DB269 /* SelectRoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437F74921B69FF3000DB269 /* SelectRoomTableViewController.swift */; };
 		94A3C9DB21A48E04004DC207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3C9DA21A48E04004DC207 /* AppDelegate.swift */; };
 		94A3C9E021A48E04004DC207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A3C9DE21A48E04004DC207 /* Main.storyboard */; };
 		94A3C9E221A48E05004DC207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94A3C9E121A48E05004DC207 /* Assets.xcassets */; };
 		94A3C9E521A48E05004DC207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A3C9E321A48E05004DC207 /* LaunchScreen.storyboard */; };
-		94A3C9ED21A48EA5004DC207 /* registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3C9EC21A48EA5004DC207 /* registration.swift */; };
+		94A3C9ED21A48EA5004DC207 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3C9EC21A48EA5004DC207 /* Registration.swift */; };
 		94A3C9EF21A49095004DC207 /* RegistrationFormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3C9EE21A49095004DC207 /* RegistrationFormTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9437F74921B69FF3000DB269 /* SelectRoomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoomTableViewController.swift; sourceTree = "<group>"; };
 		94A3C9D721A48E04004DC207 /* Hotel Bubuki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hotel Bubuki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A3C9DA21A48E04004DC207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94A3C9DF21A48E04004DC207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94A3C9E121A48E05004DC207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94A3C9E421A48E05004DC207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94A3C9E621A48E05004DC207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94A3C9EC21A48EA5004DC207 /* registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registration.swift; sourceTree = "<group>"; };
+		94A3C9EC21A48EA5004DC207 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		94A3C9EE21A49095004DC207 /* RegistrationFormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +72,7 @@
 		94A3C9F021A490B6004DC207 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				94A3C9EC21A48EA5004DC207 /* registration.swift */,
+				94A3C9EC21A48EA5004DC207 /* Registration.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -78,6 +80,7 @@
 		94A3C9F121A490C0004DC207 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9437F74921B69FF3000DB269 /* SelectRoomTableViewController.swift */,
 				94A3C9EE21A49095004DC207 /* RegistrationFormTableViewController.swift */,
 			);
 			path = Controller;
@@ -123,6 +126,7 @@
 				TargetAttributes = {
 					94A3C9D621A48E04004DC207 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -162,8 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A3C9ED21A48EA5004DC207 /* registration.swift in Sources */,
+				94A3C9ED21A48EA5004DC207 /* Registration.swift in Sources */,
 				94A3C9EF21A49095004DC207 /* RegistrationFormTableViewController.swift in Sources */,
+				9437F74A21B69FF3000DB269 /* SelectRoomTableViewController.swift in Sources */,
 				94A3C9DB21A48E04004DC207 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,7 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.enigvor.Hotel-Bubuki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -337,7 +342,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.enigvor.Hotel-Bubuki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
