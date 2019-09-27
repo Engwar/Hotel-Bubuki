@@ -31,7 +31,7 @@ class SelectRoomTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RoomTypeCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RoomTypeCell")!
         let roomType = RoomType.room[indexPath.row]
         
         cell.textLabel?.text = roomType.name
